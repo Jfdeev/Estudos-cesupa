@@ -3,32 +3,22 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro C[2][3], tC[3][2], i, j
+		inteiro vet[10], w[10], i
 
-		para(i = 0; i < 2; i++)
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 3; j++)
-			{
-				escreva("Digite o valor para C[", i, "][", j,"]: ")
-				leia(C[i][j])
-			}
+			escreva("Digite o ", i+1, "º elemento do vetor: ")
+			leia(vet[i])
 		}
 
-		para(i = 0; i < 2; i++)
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 3; j++)
-			{
-				tC[j][i] = C[i][j]
-			}
+			w[i] = vet[i]*vet[i]
 		}
 
-		para(i = 0; i < 3; i++)
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 2; j++)
-			{
-				escreva(tC[i][j], "\t")
-			}
-			escreva("\n")
+			escreva("w[", i,"] = ", w[i], "\n")
 		}
 	}
 }
@@ -37,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 425; 
+ * @POSICAO-CURSOR = 301; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

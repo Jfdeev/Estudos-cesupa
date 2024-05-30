@@ -1,32 +1,30 @@
 programa
 {
-	
+	inclua biblioteca Util --> ut
 	funcao inicio()
 	{
-		inteiro C[2][3], tC[3][2], i, j
+		inteiro matriz[10][10], i, j
 
-		para(i = 0; i < 2; i++)
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 3; j++)
+			para(j = 0; j < 10; j++)
 			{
-				escreva("Digite o valor para C[", i, "][", j,"]: ")
-				leia(C[i][j])
+				matriz[i][j] = ut.sorteia(0, 100)
 			}
 		}
 
-		para(i = 0; i < 2; i++)
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 3; j++)
+			para(j = 0; j < 10; j++)
 			{
-				tC[j][i] = C[i][j]
-			}
-		}
-
-		para(i = 0; i < 3; i++)
-		{
-			para(j = 0; j < 2; j++)
-			{
-				escreva(tC[i][j], "\t")
+				se(j > i)
+				{
+					escreva(matriz[i][j], "\t")
+				}
+				senao
+				{
+					escreva("-\t")
+				}
 			}
 			escreva("\n")
 		}
@@ -37,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 425; 
+ * @POSICAO-CURSOR = 287; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

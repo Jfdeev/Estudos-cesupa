@@ -3,32 +3,36 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro C[2][3], tC[3][2], i, j
+		real A[10], B[10]
+		inteiro i
 
-		para(i = 0; i < 2; i++)
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 3; j++)
+			escreva("A[", i, "] = ")
+			leia(A[i])
+		}
+
+		para(i = 0; i < 10; i++)
+		{
+			se(i%2 == 0){
+				B[i] = A[i]*3
+			}
+			senao
 			{
-				escreva("Digite o valor para C[", i, "][", j,"]: ")
-				leia(C[i][j])
+				B[i] = A[i]/2
 			}
 		}
 
-		para(i = 0; i < 2; i++)
+		escreva("##### Vetor A #####\n")
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 3; j++)
-			{
-				tC[j][i] = C[i][j]
-			}
+			escreva(A[i], "\t")
 		}
 
-		para(i = 0; i < 3; i++)
+		escreva("\n##### Vetor B #####\n")
+		para(i = 0; i < 10; i++)
 		{
-			para(j = 0; j < 2; j++)
-			{
-				escreva(tC[i][j], "\t")
-			}
-			escreva("\n")
+			escreva(B[i], "\t")
 		}
 	}
 }
@@ -37,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 425; 
+ * @POSICAO-CURSOR = 450; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
