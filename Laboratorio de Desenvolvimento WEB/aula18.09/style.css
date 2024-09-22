@@ -1,0 +1,23 @@
+.elipse{
+    height: 120px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px 2px black;
+    display: inline;
+}   
+
+.bola{
+    border-radius: 50%;
+}
+
+#img1{
+    margin-bottom: 100px;
+}
+
+#img3{
+    border: solid red;
+}
+
+#img4{
+    float: right;
+}

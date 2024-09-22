@@ -1,0 +1,33 @@
+body{
+    background: url("https://blog.marcusoliveiradev.com.br/wp-content/uploads/2023/08/Como-colocar-cor-de-fundo-no-html.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 550px;
+    width: 100%;
+    margin: 150px 100px 150px 100px;
+}
+.cartao-contato img{
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.cartao-contato{
+    display: flex;
+    padding: 15px;
+}
+.contato-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contato-info h2{
+    color: rgb(41, 41, 41);
+}

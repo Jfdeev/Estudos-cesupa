@@ -1,0 +1,72 @@
+-------------------------------------------------
+|         Métodos de Demonstração Matemática     |
+-------------------------------------------------
+
+1. Demonstração Direta
+-------------------------------------------------
+Na demonstração direta, parte-se das hipóteses e, utilizando operações lógicas e matemáticas, chega-se à conclusão desejada.
+
+Exemplo:
+Demonstrar que a soma de dois números pares é sempre par.
+
+Resolução:
+Sejam a e b dois números pares. Isso significa que existem inteiros k e l tais que:
+a = 2k e b = 2l.
+A soma dos dois números é:
+a + b = 2k + 2l = 2(k + l).
+Como k + l é um número inteiro, concluímos que a + b é divisível por 2, ou seja, é par.
+
+-------------------------------------------------
+2. Demonstração por Absurdo
+-------------------------------------------------
+Esse método assume a negação da afirmação a ser demonstrada e, a partir dessa suposição, chega-se a uma contradição.
+
+Exemplo:
+Demonstrar que √2 é irracional.
+
+Resolução:
+Suponha, por absurdo, que √2 seja racional. Então, podemos escrever:
+√2 = p / q,
+onde p e q são inteiros primos entre si. Elevando ambos os lados ao quadrado:
+2 = p^2 / q^2.
+Multiplicando ambos os lados por q^2:
+2q^2 = p^2.
+Isso implica que p^2 é par, logo p é par. Se p é par, existe um inteiro k tal que p = 2k. Substituindo:
+2q^2 = (2k)^2 = 4k^2 → q^2 = 2k^2.
+Logo, q é par, o que contradiz o fato de que p e q são primos entre si. Portanto, √2 é irracional.
+
+-------------------------------------------------
+3. Demonstração por Contraposição
+-------------------------------------------------
+Em vez de demonstrar que A → B, demonstra-se a contrapositiva: ¬B → ¬A.
+
+Exemplo:
+Demonstrar que se um número n não é ímpar, então n é par.
+
+Resolução:
+Vamos demonstrar a contrapositiva: Se n não é par, então n é ímpar.
+Se n não é par, então n não pode ser escrito como 2k, ou seja, deve ser da forma 2k + 1, ou seja, n é ímpar.
+Logo, a contrapositiva está correta e a afirmação original também.
+
+-------------------------------------------------
+4. Demonstração por Enumeração Exaustiva
+-------------------------------------------------
+Verifica-se todas as possibilidades para concluir a validade de uma proposição.
+
+Exemplo:
+Demonstrar que o quadrado de um número inteiro n é congruente a 0 ou 1 módulo 3.
+
+Resolução:
+Os inteiros podem ser divididos em três classes de resto quando divididos por 3: n = 3k, n = 3k + 1, ou n = 3k + 2.
+
+- Se n = 3k, então:
+  n^2 = (3k)^2 = 9k^2 ≡ 0 (mod 3).
+  
+- Se n = 3k + 1, então:
+  n^2 = (3k + 1)^2 = 9k^2 + 6k + 1 ≡ 1 (mod 3).
+  
+- Se n = 3k + 2, então:
+  n^2 = (3k + 2)^2 = 9k^2 + 12k + 4 ≡ 1 (mod 3).
+
+Portanto, para qualquer n, n^2 é congruente a 0 ou 1 módulo 3.
+-------------------------------------------------
