@@ -1,0 +1,25 @@
+#container{
+    width: 1120px;
+    height: 3054px;
+}
+.headline{
+    color: #E1624F;
+    font: bold;
+    margin-top: 40px;
+}
+
+.title-local{
+    margin-bottom: 40px;
+}
+
+.card-travel{
+    margin: 40px auto;
+}
+
+.p-fotter{
+    margin-top: 40px;
+}
+
+.description{
+    margin-bottom: 40px;
+}
